@@ -8,6 +8,7 @@ import {
   WELLNESS_CHECK_SYSTEM_PROMPT,
   analyzeWellnessCheck
 } from './bedrock.js';
+import { ASSESSMENT_QUESTIONS, ACKNOWLEDGMENTS, COMPLETION_MESSAGE } from '../data/assessmentQuestions.js';
 
 // Store active sessions in memory (for hackathon - use Redis in production)
 const activeSessions = new Map();
@@ -27,15 +28,13 @@ export const handleChatConnection = (socket, io) => {
         userId,
         type: 'assessment',
         messages: [],
-        questionCount: 0
+        questionCount: 0,
+        currentQuestionIndex: 0
       });
 
-      // Initial greeting
-      const greeting = await invokeClaude(
-        "Greet a young person starting a career assessment. Ask them what excites them about entertainment. Keep it brief and friendly.",
-        CAREER_ASSESSMENT_SYSTEM_PROMPT,
-        200
-      );
+      // Use first predetermined question (greeting)
+      const firstQuestion = ASSESSMENT_QUESTIONS[0];
+      const greeting = firstQuestion.question;
 
       // Save to chat history
       await putItem(TABLES.CHAT_HISTORY, {
@@ -46,7 +45,10 @@ export const handleChatConnection = (socket, io) => {
         sessionType: 'assessment',
         role: 'assistant',
         message: greeting,
-        metadata: { questionNumber: 1 }
+        metadata: {
+          questionNumber: 1,
+          questionId: firstQuestion.id
+        }
       });
 
       activeSessions.get(socket.id).messages.push({
@@ -93,8 +95,36 @@ export const handleChatConnection = (socket, io) => {
         metadata: { questionNumber: session.questionCount }
       });
 
-      // If we've asked 5-7 questions, analyze and recommend
-      if (session.questionCount >= 5) {
+      // Move to next question index
+      session.currentQuestionIndex++;
+
+      // Check if we've asked all predetermined questions
+      if (session.currentQuestionIndex >= ASSESSMENT_QUESTIONS.length) {
+        // Send completion message
+        const completionMsg = COMPLETION_MESSAGE;
+
+        session.messages.push({ role: 'assistant', message: completionMsg });
+
+        await putItem(TABLES.CHAT_HISTORY, {
+          chatId: `${session.userId}#${session.sessionId}`,
+          timestamp: Date.now(),
+          userId: session.userId,
+          sessionId: session.sessionId,
+          sessionType: 'assessment',
+          role: 'assistant',
+          message: completionMsg,
+          metadata: {
+            questionNumber: session.questionCount + 1,
+            isCompletion: true
+          }
+        });
+
+        socket.emit('assistant-message', {
+          message: completionMsg,
+          questionNumber: session.questionCount + 1
+        });
+
+        // Now analyze with Bedrock (only at the end)
         const analysis = await analyzeCareerAssessment(session.messages);
 
         if (analysis.category && analysis.confidence > 60) {
@@ -133,7 +163,7 @@ export const handleChatConnection = (socket, io) => {
             role: 'assistant',
             message: recommendationMessage,
             metadata: {
-              questionNumber: session.questionCount + 1,
+              questionNumber: session.questionCount + 2,
               recommendation: true
             }
           });
@@ -148,18 +178,19 @@ export const handleChatConnection = (socket, io) => {
           activeSessions.delete(socket.id);
           return;
         }
+
+        // If analysis failed, still complete but with error
+        socket.emit('error', { message: 'Analysis confidence too low. Please try again.' });
+        activeSessions.delete(socket.id);
+        return;
       }
 
-      // Continue conversation
-      const conversationContext = session.messages
-        .map(m => `${m.role}: ${m.message}`)
-        .join('\n');
+      // Continue with next predetermined question
+      const nextQuestionObj = ASSESSMENT_QUESTIONS[session.currentQuestionIndex];
 
-      const nextQuestion = await invokeClaude(
-        `Conversation so far:\n${conversationContext}\n\nAsk the next question (question ${session.questionCount + 1} of 5-7). Build on their previous answer.`,
-        CAREER_ASSESSMENT_SYSTEM_PROMPT,
-        300
-      );
+      // Add acknowledgment for natural conversation flow
+      const acknowledgment = ACKNOWLEDGMENTS[Math.floor(Math.random() * ACKNOWLEDGMENTS.length)];
+      const nextQuestion = acknowledgment + nextQuestionObj.question;
 
       session.messages.push({ role: 'assistant', message: nextQuestion });
 
@@ -171,7 +202,10 @@ export const handleChatConnection = (socket, io) => {
         sessionType: 'assessment',
         role: 'assistant',
         message: nextQuestion,
-        metadata: { questionNumber: session.questionCount + 1 }
+        metadata: {
+          questionNumber: session.questionCount + 1,
+          questionId: nextQuestionObj.id
+        }
       });
 
       socket.emit('assistant-message', {
