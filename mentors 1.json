@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Dr. Sarah Mitchell",
+    "role": "Senior Tech Career Advisor",
+    "rating": 4.9,
+    "experience_years": "15+",
+    "about": "Seasoned professional helping tech professionals navigate transitions, develop leadership, and grow careers.",
+    "areas_of_expertise": [
+      "Software Engineering",
+      "Career Transitions",
+      "Leadership"
+    ],
+    "mentorship_approach": [
+      "One-on-one personalized sessions",
+      "Career roadmap development",
+      "Resume and portfolio review",
+      "Mock interviews",
+      "Ongoing accountability"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Emily Zhao",
+    "role": "AI Career Mentor",
+    "rating": 4.7,
+    "experience_years": "9+",
+    "about": "Emily Zhao is an experienced ai career mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "AI Career"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Marcus Kent",
+    "role": "Cloud Engineering Coach",
+    "rating": 4.8,
+    "experience_years": "8+",
+    "about": "Marcus Kent is an experienced cloud engineering coach helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Cloud Engineering"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Priya Nair",
+    "role": "Data Science Career Advisor",
+    "rating": 4.6,
+    "experience_years": "18+",
+    "about": "Priya Nair is an experienced data science career advisor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Data Science Career Advisor"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "John Ramirez",
+    "role": "Product Management Mentor",
+    "rating": 4.9,
+    "experience_years": "12+",
+    "about": "John Ramirez is an experienced product management mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Product Management"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Linda Bennett",
+    "role": "Cybersecurity Career Coach",
+    "rating": 5.0,
+    "experience_years": "17+",
+    "about": "Linda Bennett is an experienced cybersecurity career coach helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Cybersecurity Career"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Samuel Lee",
+    "role": "Full Stack Engineering Mentor",
+    "rating": 4.5,
+    "experience_years": "8+",
+    "about": "Samuel Lee is an experienced full stack engineering mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Full Stack Engineering"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Nora Davis",
+    "role": "UX/UI Design Career Advisor",
+    "rating": 4.5,
+    "experience_years": "13+",
+    "about": "Nora Davis is an experienced ux/ui design career advisor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "UX/UI Design Career Advisor"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Victor Huang",
+    "role": "DevOps & SRE Mentor",
+    "rating": 4.7,
+    "experience_years": "10+",
+    "about": "Victor Huang is an experienced devops & sre mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "DevOps & SRE"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Aisha Thompson",
+    "role": "Software Architecture Mentor",
+    "rating": 4.7,
+    "experience_years": "13+",
+    "about": "Aisha Thompson is an experienced software architecture mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Software Architecture"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Carlos Mendes",
+    "role": "Blockchain & Web3 Career Coach",
+    "rating": 4.8,
+    "experience_years": "18+",
+    "about": "Carlos Mendes is an experienced blockchain & web3 career coach helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Blockchain & Web3 Career"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Hannah Patel",
+    "role": "Leadership & Tech Strategy Mentor",
+    "rating": 4.9,
+    "experience_years": "11+",
+    "about": "Hannah Patel is an experienced leadership & tech strategy mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Leadership & Tech Strategy"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "David Collins",
+    "role": "Mobile Development Career Guide",
+    "rating": 4.7,
+    "experience_years": "12+",
+    "about": "David Collins is an experienced mobile development career guide helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Mobile Development Career Guide"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Rebecca Gomez",
+    "role": "Technical Program Management Mentor",
+    "rating": 4.9,
+    "experience_years": "18+",
+    "about": "Rebecca Gomez is an experienced technical program management mentor helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Technical Program Management"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Ryan Carter",
+    "role": "Machine Learning Career Coach",
+    "rating": 5.0,
+    "experience_years": "15+",
+    "about": "Ryan Carter is an experienced machine learning career coach helping professionals accelerate their growth in tech.",
+    "areas_of_expertise": [
+      "Career Transitions",
+      "Mentorship",
+      "Machine Learning Career"
+    ],
+    "mentorship_approach": [
+      "Personalized guidance",
+      "Skill-gap analysis",
+      "Portfolio and resume review",
+      "Interview preparation",
+      "Continuous learning roadmap"
+    ],
+    "image_url": "https://via.placeholder.com/150"
+  }
+]

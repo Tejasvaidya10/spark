@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Sarah Johnson",
+    "title": "Senior Software Engineer at Google",
+    "journey_duration": "3 years journey",
+    "story": "After completing a 12-week coding bootcamp, I landed my first junior role at a startup. The transition wasn't easy, but with dedication, continuous learning, and strong mentorship, I progressed to senior engineer in just a few years.",
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Michael Chen",
+    "title": "Data Scientist at Meta",
+    "journey_duration": "4 years journey",
+    "story": "Coming from a mechanical engineering background, I transitioned into data science through online courses and Kaggle competitions. Persistence and mentoring helped me break into big tech.",
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Ava Martinez",
+    "title": "Product Manager at Amazon",
+    "journey_duration": "5 years journey",
+    "story": "Starting as a customer support rep, I slowly transitioned into product by shadowing PMs, taking ownership of small features, and earning trust. Formal PM training and mentors accelerated my growth.",
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "David Kim",
+    "title": "AI Research Engineer at NVIDIA",
+    "journey_duration": "3.5 years journey",
+    "story": "With no formal CS education, I self-studied deep learning, contributed to open-source, and built strong research portfolios. My breakthrough came after publishing my first paper.",
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Johanna Patel",
+    "title": "UX Designer at Microsoft",
+    "journey_duration": "2.5 years journey",
+    "story": "I transitioned from graphic design to UX through a bootcamp, freelance projects, and building a strong portfolio. Consistent learning, design critiques, and mentorship shaped my path.",
+    "image_url": "https://via.placeholder.com/150"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Alex Thompson",
+    "role": "Senior Software Engineer",
+    "company": "Google",
+    "location": "San Francisco, CA",
+    "mutual_connections": 12,
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js"
+    ],
+    "match_percent": 95,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Sophia Patel",
+    "role": "Data Scientist",
+    "company": "Meta",
+    "location": "Menlo Park, CA",
+    "mutual_connections": 9,
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "SQL"
+    ],
+    "match_percent": 92,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Daniel Kim",
+    "role": "Product Manager",
+    "company": "Amazon",
+    "location": "Seattle, WA",
+    "mutual_connections": 7,
+    "skills": [
+      "Product Strategy",
+      "Agile",
+      "Figma"
+    ],
+    "match_percent": 88,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Olivia Rivera",
+    "role": "UX Designer",
+    "company": "Microsoft",
+    "location": "Redmond, WA",
+    "mutual_connections": 14,
+    "skills": [
+      "Figma",
+      "UX Research",
+      "Prototyping"
+    ],
+    "match_percent": 90,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Ethan Walker",
+    "role": "Backend Engineer",
+    "company": "Netflix",
+    "location": "Los Gatos, CA",
+    "mutual_connections": 11,
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "AWS"
+    ],
+    "match_percent": 93,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Maya Chen",
+    "role": "Machine Learning Engineer",
+    "company": "Nvidia",
+    "location": "Santa Clara, CA",
+    "mutual_connections": 5,
+    "skills": [
+      "PyTorch",
+      "CUDA",
+      "ML Ops"
+    ],
+    "match_percent": 89,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Liam Johnson",
+    "role": "Cloud Architect",
+    "company": "IBM",
+    "location": "Austin, TX",
+    "mutual_connections": 10,
+    "skills": [
+      "AWS",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "match_percent": 91,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Isabella Garcia",
+    "role": "Security Analyst",
+    "company": "Cisco",
+    "location": "San Jose, CA",
+    "mutual_connections": 8,
+    "skills": [
+      "Cybersecurity",
+      "SIEM",
+      "Python"
+    ],
+    "match_percent": 87,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Noah Adams",
+    "role": "DevOps Engineer",
+    "company": "Atlassian",
+    "location": "Mountain View, CA",
+    "mutual_connections": 6,
+    "skills": [
+      "Docker",
+      "CI/CD",
+      "Jenkins"
+    ],
+    "match_percent": 90,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Ava Jones",
+    "role": "Frontend Engineer",
+    "company": "Adobe",
+    "location": "San Jose, CA",
+    "mutual_connections": 13,
+    "skills": [
+      "React",
+      "TypeScript",
+      "UI Design"
+    ],
+    "match_percent": 94,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Benjamin Lee",
+    "role": "Software Engineer",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "mutual_connections": 15,
+    "skills": [
+      "Swift",
+      "iOS",
+      "Xcode"
+    ],
+    "match_percent": 96,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Chloe Martinez",
+    "role": "Business Analyst",
+    "company": "Salesforce",
+    "location": "San Francisco, CA",
+    "mutual_connections": 4,
+    "skills": [
+      "Excel",
+      "SQL",
+      "Tableau"
+    ],
+    "match_percent": 85,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Harper Singh",
+    "role": "AI Researcher",
+    "company": "OpenAI",
+    "location": "San Francisco, CA",
+    "mutual_connections": 2,
+    "skills": [
+      "NLP",
+      "Deep Learning",
+      "Python"
+    ],
+    "match_percent": 98,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Elijah Brown",
+    "role": "Full Stack Developer",
+    "company": "Shopify",
+    "location": "Toronto, Canada",
+    "mutual_connections": 9,
+    "skills": [
+      "Node.js",
+      "React",
+      "GraphQL"
+    ],
+    "match_percent": 91,
+    "image_url": "https://via.placeholder.com/150"
+  },
+  {
+    "name": "Amelia Wilson",
+    "role": "Robotics Engineer",
+    "company": "Tesla",
+    "location": "Fremont, CA",
+    "mutual_connections": 6,
+    "skills": [
+      "ROS",
+      "C++",
+      "Robotics"
+    ],
+    "match_percent": 89,
+    "image_url": "https://via.placeholder.com/150"
+  }
+]

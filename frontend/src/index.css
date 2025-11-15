@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Spark Design Tokens */
+    --background: #F7F8FA;
+    --foreground: #2D3748;
+    --card: #ffffff;
+    --card-foreground: #2D3748;
+    --popover: #ffffff;
+    --popover-foreground: #2D3748;
+    --primary: #4A5568;
+    --primary-foreground: #ffffff;
+    --secondary: #EDF2F7;
+    --secondary-foreground: #2D3748;
+    --muted: #F7FAFC;
+    --muted-foreground: #718096;
+    --accent: #E2E8F0;
+    --accent-foreground: #2D3748;
+    --destructive: #F56565;
+    --destructive-foreground: #ffffff;
+    --border: #E2E8F0;
+    --input: #F7FAFC;
+    --ring: #A0AEC0;
+    --radius: 0.5rem;
+
+    /* Spark Color Palette */
+    --sage-green: #8BA888;
+    --soft-blue: #667EEA;
+    --light-blue: #76A9FA;
+
+    /* Charts */
+    --chart-1: #667EEA;
+    --chart-2: #8BA888;
+    --chart-3: #68D391;
+    --chart-4: #76A9FA;
+    --chart-5: #90CDF4;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none;
+  }
+}
